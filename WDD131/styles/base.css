@@ -1,0 +1,112 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #004e7c;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Course-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #006699;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #005580;
+}
+
+/* Main content cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1 1 45%;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.card h1 {
+  margin-top: 0;
+  color: #004e7c;
+}
+
+.card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  display: block;
+  margin: 15px 0;
+}
+.card-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+/*underline the second card heading*/
+.card:nth-of-type(2) h1{
+  text-decoration: underline;
+}
+
+.card-content img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-content p {
+  flex: 1;
+}
+
+/* Footer styling */
+footer {
+  background-color: #002f4b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}

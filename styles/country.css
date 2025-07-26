@@ -1,0 +1,116 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #10c878; /* deep red */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-msg {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 2px;
+  margin-top: -500px; /* overlaps with hero image */
+  position: relative;
+}
+
+.data, .weather {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  padding: 20px;
+  width: 20%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.data::before, .weather::before {
+  content: attr(data-title);
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-color: #137547; /* green bar */
+  color: white;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.data ul {
+  list-style: none;
+}
+
+.data li {
+  padding: 4px 0;
+  font-size: 1rem;
+}
+
+.weather .weather-item {
+  padding: 4px 0;
+  font-size: 1rem;
+}
+footer {
+  background-color: #10c878;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 10;
+  width: 100%;
+}
+
+/* Custom titles using data attributes */
+.data::before {
+  content: "Data";
+}
+
+.weather::before {
+  content: "Weather";
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weather::before::after {
+  content: "🌤";
+}

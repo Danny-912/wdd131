@@ -9,8 +9,8 @@ const options = { weekday: "long", year: "numeric", month: "long", day: "numeric
 document.getElementById("currentDate").textContent = now.toLocaleDateString(undefined, options);
 
 // === Weather Data for Nigeria (Static) ===
-const temperature = 20; // °C
-const windSpeed = 5;    // km/h
+const temperature = 9; // °C
+const windSpeed = 4;    // km/h
 
 document.getElementById("temperature").textContent = temperature;
 document.getElementById("windSpeed").textContent = windSpeed;

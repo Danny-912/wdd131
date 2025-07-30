@@ -114,3 +114,8 @@ footer {
 .weather::before::after {
   content: "🌤";
 }
+@media (min-width: 900px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

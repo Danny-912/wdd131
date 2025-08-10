@@ -24,5 +24,7 @@ if (window.location.href.includes("review.html") && document.referrer.includes("
     reviewCount++;
     localStorage.setItem("reviewCount", reviewCount);
 }
+reviewCounterElement.textContent = `You have submitted ${reviewCount} reviews so far.`;
+
 
 reviewCounterElement.textContent = You have submitted ${reviewCount} reviews so far.;
